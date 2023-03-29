@@ -1,6 +1,12 @@
 {
-    "5050424c3230323344656d6f4765726f6c616d6f": {
-        "gitlabUserName": "",
-        "url": "https://gimbalabs.com"
-    }
+  "subject": "5050424c3230323344656d6f4765726f6c616d6f",
+  "social": {
+    "gitlabUserName": ""
+  },
+  "url": {
+    "value": "https://gimbalabs.com"
+  },
+  "description": {
+    "value": "Born in 1501. Innovator across disciplines."
+  }
 }
