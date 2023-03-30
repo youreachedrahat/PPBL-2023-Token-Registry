@@ -1,12 +1,16 @@
 {
   "subject": "5050424c3230323344656d6f4765726f6c616d6f",
-  "social": {
-    "gitlabUserName": ""
+  "alias": "DemoGerolamo",
+  "contactData": {
+    "value": [""]
   },
   "url": {
     "value": "https://gimbalabs.com"
   },
-  "description": {
+  "bio": {
     "value": "Born in 1501. Innovator across disciplines."
+  },
+  "goals": {
+    "value": "Invent cool things."
   }
 }
