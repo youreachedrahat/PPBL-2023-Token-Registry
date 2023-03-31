@@ -16,7 +16,14 @@ Assignment / SLT 103.1
         ```bash
         git clone https://gitlab.com/your-gitlab-username/ppbl-2023-token-registry.git
         ```
-    - At this point, you would have your own copy of the Gimbalabs repository on your machine. This means that you could do whatever you want with this copy without fear of damaging the original repository.
+    At this point, you would have your own copy of the Gimbalabs repository on your machine. This means that you could do whatever you want with this copy without fear of damaging the original repository.
+
+    - Next, open the directory of your fork:
+        ```bash
+        cd ppbl-2023-token-registry
+        ```
+
+    - Execute the command `git branch`. That let you see how many *branches* you have currently in your project.  In this moment, you should have only one: the *main* branch.
 
 
 
