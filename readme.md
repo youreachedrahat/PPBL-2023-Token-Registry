@@ -4,7 +4,7 @@ Assignment / SLT 103.1
 1. Create a fork of this repo
     - Go to [Token Registry repo](https://gitlab.com/gimbalabs/ppbl-2023/ppbl-2023-token-registry)
     - Look for and click on the **Fork** button (upper right corner). That will open a new window called "Fork Project".  
-    - Once in Fork Project, go to the **Project URL** field. In the option **Select a namespace**, select your username.
+    - Once in Fork Project, go to the *Project URL* field. In the option **Select a namespace**, select your username.
     - Click in **Fork Project** button.
 2. Clone the repository locally (optional)
 3. Make changes
