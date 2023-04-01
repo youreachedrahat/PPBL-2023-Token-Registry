@@ -46,16 +46,16 @@ So, Let's start!
     
     - Although you can do whatever you want with this copy of the repository, you could want to treat your copy with the same care that you treat the Gimbalabs repo. So let's create a new branch. That branch will be your **working branch**:
         ```bash
-        git checkout -b example-branch
+        git checkout -b working-branch
         ```
-    You can change *example-branch* by the name you choose.
+    You can change *working-branch* by the name you choose.
 
     -  Finally, execute the command `code .` for open your *development environment* and start to make changes.
 
     >#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen), search and install the *Remote Development* extension.  
 
 
-    - From the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the steps for *a* to *h*.  
+    - From the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the steps from *a* to *h*.  
 
     - Commit and Push the changes from your **working branch** to the **main branch** of your fork:
 
@@ -65,7 +65,7 @@ So, Let's start!
 
         You will notice that the changes will disappear from that section and reappear in the *Staged Changes* section. 
 
-        -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example `I created a new .json file`. Next, click on the *Commit* button.
+        -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example, `I created a new .json file`. Next, click on the *Commit* button.
 
         - Click on the *Sync Changes* button.
 
@@ -73,10 +73,33 @@ So, Let's start!
 
         - Next, the same window will request a password. That password corresponds to your *Personal Access Token* that you can configure in the *Profile Settings* of your GitLab account, in the section "Access Tokens".
 
-        >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will start with the prefix *glpat*.  After generated, you have to copy and keep that token in a secure way.  You will use that token constantly.
+        >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will start with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
+
+    - Parcial result: if you go to your fork at GitLab and select your *working branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch. So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).
+
+    - Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
+
+    - In the new terminal, execute:
+        ```bash
+        git checkout main
+        ```
+    - Merge your *working branch* into your *main branch*:
+        ```bash
+        git merge working-branch
+        ```
+    - Push the changes:
+        ```bash
+        git push
+        ```
 
 
-        
+
+
+
+
+
+
+
 
 
 
