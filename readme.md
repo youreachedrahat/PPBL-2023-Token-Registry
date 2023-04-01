@@ -141,7 +141,7 @@ So, Let's start!
 
     - Scroll down the screen and click on **Create merge request** button.
 
-> And that's it. SLT complete. Congratulations my dear student: You are the best!
+>#### And that's it. SLT complete. Congratulations my dear student: You are the best!
 
 
 
