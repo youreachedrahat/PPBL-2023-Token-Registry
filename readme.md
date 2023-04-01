@@ -42,21 +42,39 @@ So, Let's start!
         cd ppbl-2023-token-registry
         ```
 
-    - Execute the command `git branch`. That command let you see how many *branches* you have currently in your project.  In this moment, you should have only one: the *main* branch.
+    - Execute the command `git branch`. That command let you see how many *branches* you have currently in your project.  In this moment, you should have only one: the **main branch**.
     
-    - Although you can do whatever you want with this copy of the repository, you could want to treat your copy with the same care that you treat the Gimbalabs repo. So let's a new branch. That branch will be your *working branch*:
+    - Although you can do whatever you want with this copy of the repository, you could want to treat your copy with the same care that you treat the Gimbalabs repo. So let's create a new branch. That branch will be your **working branch**:
         ```bash
         git checkout -b example-branch
         ```
-    You can change *example-branch* by the name that you want.
+    You can change *example-branch* by the name you choose.
 
     -  Finally, execute the command `code .` for open your *development environment* and start to make changes.
 
-    >#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to *extensions* tab and install the *Remote Development* extension.  
+    >#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen), search and install the *Remote Development* extension.  
+
+
+    - From the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the steps for *a* to *h*.  
+
+    - Commit and Push the changes from your **working branch** to the **main branch** of your fork:
+
+        - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
+
+        - If you Hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
+
+        You will notice that the changes will disappear from that section and reappear in the *Staged Changes* section. 
+
+        -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example `I created a new .json file`. Next, click on the *Commit* button.
+
+        - 
+
+
+
 
 3. Make changes.
 
-    # Key Steps:
+    # Basic Routine:
 
     - create a copy of `template.json` where the file name is **the HEX name of your PPBL2023 Token**
     - add details to your new `.json` file. See [example](/mappings/5050424c3230323344656d6f4765726f6c616d6f.json)
@@ -64,56 +82,62 @@ So, Let's start!
 
     You can accomplish your assigment without going through the step 2 (but believe me: in some point in your career as Developer, you will need the step 2). 
 
-    So let's see the two options: directly from GitLab (without the step 2), and using your own development environment. Each option will cover the key step stated above.
+    So let's see the two options: directly from GitLab (without the step 2), and using your own development environment (applying the step 2). Each option will cover the basic routine described above.
 
     #### 3.1 Directly from GitLab: 
 
-    - In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the explorer, paste this PolicyID: 
+    a. In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the Cardanoscan's explorer, paste this PolicyID: 
 
     `05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056`
 
-    That action will show you a list. Find your PPBL2023 Token on that list.  Once you find it, copy the name.
+    That action will show you a list. Find your PPBL2023 Token on that list.  Once you find it, copy your token's name.
 
-    - Next, in a new tab, go to the [Hex To Text Converter Online Tool](https://string-functions.com/string-hex.aspx). In the field "*Enter the text to encode to hex, and then click "Convert!*" paste your token's name. Then, click in the *Convert!* button. 
+    b. Next, in a new tab of your web browser, go to the [Hex To Text Converter Online Tool](https://string-functions.com/string-hex.aspx). In the field "*Enter the text to encode to hex*", paste your token's name. Then, click in the *Convert!* button. 
 
-    Copy the hexadecimal provided by the field "*The encoded string*"
+    Copy the hexadecimal provided by the field "*The encoded string*" as a result.
 
-    - Now, go to your fork on GitLab (remember: *gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
+    c. Now, go to your fork on GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
 
-    - Inside the `mappings` folder create a new file. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
+    d. Located at VS Code, create a new file inside the `mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
 
-    - Next, open the file `template.json` and copy all its content (because it's a template).
+    e. Next, open the file `template.json` and copy all its content (because it's a template).
 
-    - Go back to your `.json` recently created and paste there the `template.json` content.
+    f. Go back to your `.json` recently created and paste there the `template.json` content.
 
-    - Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder (that file is our guide), and following the data structure there, fill your own file. 
+    g. Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder (that file is our guide), and following the data structure there, fill your own file. That file is your *example* file.
 
-    >Note 1: the object `contactData` is a List. In that list you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
+    >Note 1: the object `contactData` is a List. In that List you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
     ```bash
     ["telegram: sb_pabon", "discord: Sebastian Pabon#5894"]
     ```
-    >Note 2: If you give a closer look to the field `subject`, you'll notice that the name of the file and the content of that field are a little bit similar. 
+    >Note 2: If you give a closer look to the field `subject` in the *example* file, you'll notice that the name of the file and the content of that field are a little bit similar. 
 
-    >Note 3: each String chunk (the content inside the quotation marks) has a limited capacity, 60 characters max. So if you want to include information that exceeds that limit, you'd have to split the content in various Strings and separate those Strings by commas. For example, in the field *bio*:
+    >Note 3: each String chunk (the content inside the quotation marks) has a limited capacity, 60 characters max. So if you want to include information that exceeds that limit, you'd have to split the content in various Strings and separate them by commas. For example, in the field *bio*:
 
     ```bash
     ["I'm a Gimbalabs tutor and I love my students, because they", "are the future of the ecosistem and", "the will create a better world."]
     ```
 
-    - Save your work.
+    h. Save your work.
 
-    - Commit and Push your changes to your fork:
+    i. Commit and Push your changes to your fork:
 
-        - Go to the *Source Code* icon in the left side (after you saved your work, a number inside a *bubble* emerged from that icon).
+        - Go to the *Source Code* icon at the left side (after you save your work, a number inside a *bubble* emerge from that icon).
 
         - In the "Commit message" field, write a message. For example `I created a new .json file`.
 
         - Click in the *Commit & Push* button. Inmediately a window pops up asking you: "Commit to a new branch?" Answer *No, Use the current branch "main"* 
 
-    - Final result: you can go to your fork at GitLab, and see all the changes you did.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, yoy have to submit a Merge request.
+    j. Final result: you can go to your fork at GitLab, and see all the changes you did.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, yoy have to submit a *Merge request*.
 
 
     #### 3.2 Using you VS Code:
+
+    > This part is a continuation of the step No. **2. Clone the repository locally**.
+
+
+
+
 
 
 
