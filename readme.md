@@ -88,7 +88,7 @@ Assignment / SLT 103.1
 
     >Note 3: each String chunk (the content inside the quotation marks) has a limited capacity, 60 characters max. So if you want to include information that exceeds that limit, you'd have to split the content in various Strings and separate those Strings by commas. For example, in the field *bio*:
 
-        ```bash
+    ```bash
     ["I'm a Gimbalabs tutor and I love my students, because they", "are the future of the ecosistem and", "the will create a better world."]
     ```
 
@@ -115,7 +115,7 @@ Assignment / SLT 103.1
 
 
 
-    
+
 
 4. Submit a Merge request:
 
