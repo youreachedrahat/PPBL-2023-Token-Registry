@@ -67,7 +67,21 @@ So, Let's start!
 
         -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example `I created a new .json file`. Next, click on the *Commit* button.
 
-        - 
+        - Click on the *Sync Changes* button.
+
+        - After that action, a small window will pop-up, requesting your GitLab username. 
+
+        - Next, the same window will request a password. That password corresponds to your *Personal Access Token* that you can configure in the *Profile Settings* of your GitLab account, in the section "Access Tokens".
+
+        >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will start with the prefix *glpat*.  After generated, you have to copy and keep that token in a secure way.  You will use that token constantly.
+
+
+        
+
+
+
+
+
 
 
 
