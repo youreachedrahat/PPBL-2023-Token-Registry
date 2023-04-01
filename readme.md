@@ -58,7 +58,7 @@ Assignment / SLT 103.1
 
     So let's see the two options: directly from GitLab (without the step 2), and using your own development environment.
 
-    # 3.1 Directly from GitLab: 
+    #### 3.1 Directly from GitLab: 
 
     - From your own your fork (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*), look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
 
