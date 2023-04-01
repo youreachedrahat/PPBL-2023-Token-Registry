@@ -46,7 +46,38 @@ Assignment / SLT 103.1
 
     #### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to *extensions* tab and install the *Remote Development* extension.  
 
-3. Make changes
+3. Make changes.
+
+    # Key Steps:
+
+    - create a copy of `template.json` where **the file name is the HEX name of your PPBL2023 Token**
+    - add details to your new `.json` file. See [example](/mappings/5050424c3230323344656d6f4765726f6c616d6f.json)
+    - save
+
+    You can accomplish your assigment without going through the step 2 (but believe me: in some point in your career as Developer, you will need the step 2). 
+
+    So let's see the two options: directly from GitLab (without the step 2), and using your own development environment.
+
+    # 3.1 Directly from GitLab: 
+
+    - From your own your fork (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*), look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
+
+    - In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the explorer, paste this PolicyID: 
+
+    `05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056`
+
+
+
+
+
+
+    - In a new tab, go to the [Hex To Text Converter Online Tool](https://string-functions.com/hex-string.aspx).   
+
+
+
+
+
+
     - create a copy of `template.json` where the file name is the HEX name of your PPBL2023 Token
     - add details to your new `.json` file. See [example](/mappings/5050424c3230323344656d6f4765726f6c616d6f.json)
     - save
@@ -66,3 +97,6 @@ Assignment / SLT 103.1
 > https://preprod.cardanoscan.io/
 - policyID `05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056`
 - contract address `addr_test1wr6ewsvtmdjv8znh7wxvw9qezgwvju5rdk9gmgefvrvrhug7zrfe0`
+
+
+In the numeral 3.1, you could search your token name using the *Contributor Reference Address*: `addr_test1wr6ewsvtmdjv8znh7wxvw9qezgwvju5rdk9gmgefvrvrhug7zrfe0` 
