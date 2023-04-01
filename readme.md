@@ -124,7 +124,7 @@ So, Let's start!
 
     > This part is a continuation of the step No. **2. Clone the repository locally**.
 
-    - From the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the steps from *a* to *h*.  
+    - From the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions from *a* to *h*, except the instruction *c*.  
 
     - Commit and Push the changes from your **working-branch** to the **main branch** of your fork:
 
