@@ -189,4 +189,8 @@ So, Let's start!
 
 - If you want to decode the Hexagesimal piece of data that you obtained thru the *Hex To Text Converter Online Tool*, go to [this page](https://string-functions.com/hex-string.aspx). 
 
-- This is a really good GitLab guide: https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#clone-with-https  
+- These are really good GitLab guides: 
+
+    - https://docs.gitlab.com/ee/tutorials/make_your_first_git_commit.html
+    - https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#clone-with-https  
+
