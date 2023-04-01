@@ -1,5 +1,9 @@
 Assignment / SLT 103.1
 
+# Using Git
+
+## Contrib Tokens
+
 The Version Control System "Git" is the way developers interact with each other.  It is the tool they use to bring order to their workflow.  Specifically talking about the task of working with Git without dying several times in the attempt, the instructions we will provide in this section will allow you to get on the dance floor.  For sure you will still experience complications and there will be days of confusion. However, we can assure you of one thing: with every line of code you modify and then commit and merge request, with every project you fork and modify on your own machine, with every collaboration you support through the famous Git Version Control System, you will get stronger. It's a reward for your courage.  
 
 So, Let's start!
