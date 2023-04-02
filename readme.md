@@ -13,17 +13,15 @@ So, Let's start!
     
     - Go to [Token Registry repo](https://gitlab.com/gimbalabs/ppbl-2023/ppbl-2023-token-registry)
     
-    - Look for the **Fork** button (upper right corner). Click on there. That will open a new window called *"Fork Project"*.  
+    - Look for the **Fork** button (upper right corner). Click on it. A new window called *Fork Project* will open.  
 
     - Once in the *Fork Project* window, go to the **Project URL** field. In the option *"Select a namespace"*, select **your** GitLab username.
     
-    - Click on the **Fork Project** button.
-    
-    - Final result: your own copy (your fork) of the *Token Registry repo* with the URL *gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*
+    - Scroll down the page and click on the **Fork Project** button. This action will take you directly to your fork (your own copy) of the *Token Registry repo* with the URL *gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*
 
 2. Clone the repository locally (optional).
     
-    - In your fork, look for the **Clone** button (on the right side). Click on there. 
+    - In your fork, look for the **Clone** button (on the right side). Click on it. 
     
     - Copy the URL corresponding to the *Clone with HTTPS* option.   
     
@@ -35,14 +33,14 @@ So, Let's start!
         ```bash
         git clone https://gitlab.com/your-gitlab-username/ppbl-2023-token-registry.git
         ```
-    At this point, you would have your own copy of the Gimbalabs repository on your machine. This means that you could do whatever you want with this copy without fear of damaging the Gimbalabs original repository.
+    At this point, you would have your own copy of the Gimbalabs repository (your fork) on your machine. This means that you could do whatever you want with this copy without fear of damaging the Gimbalabs original repository.
 
     - Next, open the directory of your fork:
         ```bash
         cd ppbl-2023-token-registry
         ```
 
-    - You have to add the original repository, in this case the Gimbalabs repository, as a remote:
+    - You have to add the original repository, in this case the Gimbalabs repository, as a *remote*:
 
         ```bash
         git remote add upstream https://gitlab.com/gimbalabs/ppbl-2023/ppbl-2023-token-registry 
@@ -51,27 +49,29 @@ So, Let's start!
 
     - Execute the command `git branch`. That command let you see how many *branches* you have currently in your project.  In this moment, you should have only one: the **main branch**.
     
-    - Although you can do whatever you want with this copy of the repository, you could want to treat your copy with the same care that you treat the Gimbalabs repo. So let's create a new branch. That branch will be your **working-branch**:
+    - While you can do whatever you want with your copy of the repository, you might want to treat your copy with the same care you would treat the Gimbalabs repo. So let's create a new branch. That branch will be your **working-branch**:
         ```bash
         git checkout -b working-branch
         ```
     You can change *working-branch* by the name you choose.
 
+    That action will take you directly to the **working-branch**, so you will do your assignment in that branch.You can check it using the `git branch` command.
+
     -  Finally, execute the command `code .` for open your *development environment* and start to make changes.
 
-    >#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen), search and install the *Remote Development* extension.      
+    >#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen) and search and install the *Remote Development* extension.      
 
 3. Make changes.
 
-    # Basic Routine:
+    ># Basic Routine:
 
-    - create a copy of `template.json` where the file name is **the HEX name of your PPBL2023 Token**
-    - add details to your new `.json` file. See [example](/mappings/5050424c3230323344656d6f4765726f6c616d6f.json)
-    - save
+    >- create a copy of `template.json` where the file name is **the HEX name of your PPBL2023 Token**
+    >- add details to your new `.json` file. See [example](/mappings/5050424c3230323344656d6f4765726f6c616d6f.json)
+    >- save
 
-    You can accomplish your assigment without going through the step 2 (but believe me: in some point in your career as Developer, you will need the step 2). 
+    You can accomplish your assigment without going through the step 2 (but believe me: for your career as Developer you need to practice and gain experience in step 2). 
 
-    So let's see the two options: directly from GitLab (without the step 2), and using your own development environment (applying the step 2). Each option will cover the basic routine described above.
+    So let's see the two options: directly from GitLab (without the step 2), and using your own development environment (applying the step 2). Each option will cover the *Basic Routine* described above.
 
     #### 3.1 Directly from GitLab: 
 
@@ -87,46 +87,49 @@ So, Let's start!
 
     c. Now, go to your fork on GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
 
-    d. Located at VS Code, create a new file inside the `mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
+    d. Located at VS Code: 
 
-    e. Next, open the file `template.json` and copy all its content (because it's a template).
+        - create a new file inside the `mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
 
-    f. Go back to your `.json` recently created and paste there the `template.json` content.
+        - Next, open the file `template.json` and copy all its content (because it's a template).
 
-    g. Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder (that file is our guide), and following the data structure there, fill your own file. That file is your *example* file.
+        - Go back to your `.json` recently created and paste there the `template.json` content.
 
-    >Note 1: the object `contactData` is a List. In that List you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
-    ```bash
-    ["telegram: sb_pabon", "discord: Sebastian Pabon#5894"]
-    ```
-    >Note 2: If you give a closer look to the field `subject` in the *example* file, you'll notice that the name of the file and the content of that field are a little bit similar. 
+        - Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there, fill your own file. 
 
-    >Note 3: each String chunk (the content inside the quotation marks) has a limited capacity, 60 characters max. So if you want to include information that exceeds that limit, you'd have to split the content in various Strings and separate them by commas. For example, in the field *bio*:
+        >Note 1: the object `contactData` is a List ([]). In that List you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
+        ```bash
+        ["telegram: sb_pabon", "discord: Sebastian Pabon#5894"]
+        ```
+        >Note 2: If you give a closer look to the field `subject` in the *example* file, you'll notice that the name of the file and the content of that field are a little bit similar. 
 
-    ```bash
-    ["I'm a Gimbalabs tutor and I love my students, because they", "are the future of the ecosistem and", "the will create a better world."]
-    ```
+        >Note 3: each String chunk (the content between quotes) has a limited capacity, 64 characters maximum. So if you want to include information that exceeds that limit, you will have to split the content into several Strings and separate them by commas. For example, in the field *bio*:
 
-    h. Save your work.
+        ```bash
+        ["I'm a Gimbalabs tutor and I love my students, because they", "are the future of the ecosistem and", "the will create a better world."]
+        ```
+        However, my recommendation is: make it simple. Write a brief and suscint message.
 
-    i. Commit and Push your changes to your fork:
+        - Save your work.
+
+    e. Commit and Push your changes to your fork:
 
         - Go to the *Source Code* icon at the left side (after you save your work, a number inside a *bubble* emerge from that icon).
 
         - In the "Commit message" field, write a message. For example `I created a new .json file`.
 
-        - Click in the *Commit & Push* button. Inmediately a window pops up asking you: "Commit to a new branch?" Answer *No, Use the current branch "main"* 
+        - Click on the *Commit & Push* button. Inmediately a window pops up asking you: "Commit to a new branch?". Choose: "*No, Use the current branch "main"* 
 
-    j. Final result: you can go to your fork at GitLab, and see all the changes you did.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, yoy have to submit a *Merge request*.
+    f. Final result: you can go to your fork at GitLab, and see all the changes you made.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, you have to submit a *Merge request*.
 
 
     #### 3.2 Using you VS Code:
 
-    > This part is a continuation of the step No. **2. Clone the repository locally**.
+    a. This part is a continuation of the step No. **2. Clone the repository locally**. So first follow the instructions listed there.
 
-    - From the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions from *a* to *h*, except the instruction *c*.  
+    b. Next, from the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions *a, b,and d*.  
 
-    - Commit and Push the changes from your **working-branch** to the **main branch** of your fork:
+    c. Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
 
         - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
 
@@ -184,10 +187,10 @@ So, Let's start!
 
 ## Keep Exploring
 
-- In the numeral **3. Make changes**, when you are searching your token's name in [Cardanoscan](https://preprod.cardanoscan.io/), you can do it as well using the *Contributor Reference Address*: `addr_test1wr6ewsvtmdjv8znh7wxvw9qezgwvju5rdk9gmgefvrvrhug7zrfe0` 
+- In the numeral **3. Make changes**, instruction *a*, when you are searching your token's name in [Cardanoscan](https://preprod.cardanoscan.io/), you can do it as well using the *Contributor Reference Address*: `addr_test1wr6ewsvtmdjv8znh7wxvw9qezgwvju5rdk9gmgefvrvrhug7zrfe0` 
 
 
-- If you want to decode the Hexagesimal piece of data that you obtained thru the *Hex To Text Converter Online Tool*, go to [this page](https://string-functions.com/hex-string.aspx). 
+- In the numeral **3. Make changes**, instruction *b*, if you want to decode the Hexagesimal piece of data that you obtained thru the *Hex To Text Converter Online Tool*, go to [this page](https://string-functions.com/hex-string.aspx). 
 
 - These are really good GitLab guides: 
 
