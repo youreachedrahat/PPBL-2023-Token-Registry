@@ -89,36 +89,37 @@ So, Let's start!
 
     *d.* Located at VS Code: 
 
-        - create a new file inside the `mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
+    - create a new file inside the `mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
 
-        - Next, open the file `template.json` and copy all its content (because it's a template).
+    - Next, open the file `template.json` and copy all its content (because it's a template).
 
-        - Go back to your `.json` recently created and paste there the `template.json` content.
+    - Go back to your `.json` recently created and paste there the `template.json` content.
 
-        - Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there, fill your own file. 
+    - Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there, fill your own file. 
 
-        >Note 1: the object `contactData` is a List ([]). In that List you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
-        ```bash
-        ["telegram: sb_pabon", "discord: Sebastian Pabon#5894"]
-        ```
-        >Note 2: If you give a closer look to the field `subject` in the *example* file, you'll notice that the name of the file and the content of that field are a little bit similar. 
+    >Note 1: the object `contactData` is a List ([]). In that List you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
+    ```bash
+    ["telegram: sb_pabon", "discord: Sebastian Pabon#5894"]
+    ```
+    
+    >Note 2: If you give a closer look to the field `subject` in the *example* file, you'll notice that the name of the file and the content of that field are a little bit similar. 
 
-        >Note 3: each String chunk (the content between quotes) has a limited capacity, 64 characters maximum. So if you want to include information that exceeds that limit, you will have to split the content into several Strings and separate them by commas. For example, in the field *bio*:
+    >Note 3: each String chunk (the content between quotes) has a limited capacity, 64 characters maximum. So if you want to include information that exceeds that limit, you will have to split the content into several Strings and separate them by commas. For example, in the field *bio*:
 
-        ```bash
-        ["I'm a Gimbalabs tutor and I love my students, because they", "are the future of the ecosistem and", "the will create a better world."]
-        ```
-        However, my recommendation is: make it simple. Write a brief and suscint message.
+    ```bash
+    ["I'm a Gimbalabs tutor and I love my students, because they", "are the future of the ecosistem and", "the will create a better world."]
+    ```
+    However, my recommendation is: make it simple. Write a brief and suscint message.
 
-        - Save your work.
+    - Save your work.
 
     *e.* Commit and Push your changes to your fork:
 
-        - Go to the *Source Code* icon at the left side (after you save your work, a number inside a *bubble* emerge from that icon).
+    - Go to the *Source Code* icon at the left side (after you save your work, a number inside a *bubble* emerge from that icon).
 
-        - In the "Commit message" field, write a message. For example `I created a new .json file`.
+    - In the "Commit message" field, write a message. For example `I created a new .json file`.
 
-        - Click on the *Commit & Push* button. Inmediately a window pops up asking you: "Commit to a new branch?". Choose: "*No, Use the current branch "main"* 
+    - Click on the *Commit & Push* button. Inmediately a window pops up asking you: "Commit to a new branch?". Choose: "*No, Use the current branch "main"* 
 
     *f.* Final result: you can go to your fork at GitLab, and see all the changes you made.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, you have to submit a *Merge request*.
 
@@ -131,38 +132,40 @@ So, Let's start!
 
     *c.* Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
 
-        - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
+    - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
 
-        - If you Hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
+    - If you Hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
 
-        You will notice that the changes will disappear from that section and reappear in the *Staged Changes* section. 
+    You will notice that the changes will disappear from that section and reappear in the *Staged Changes* section. 
 
-        -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example, `I created a new .json file`. Next, click on the *Commit* button.
+    -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example, `I created a new .json file`. Next, click on the *Commit* button.
 
-        - Click on the *Sync Changes* button.
+    - Click on the *Sync Changes* button.
 
-        - After that action, a small window will pop-up, requesting your GitLab username. 
+    - After that action, a small window will pop-up, requesting your GitLab username. 
 
-        - Next, the same window will request a password. That password corresponds to your *Personal Access Token* that you can configure in the *Profile Settings* of your GitLab account, in the section "Access Tokens".
+    - Next, the same window will request a password. That password corresponds to your *Personal Access Token* that you can configure in the *Profile Settings* of your GitLab account, in the section "Access Tokens".
 
-        >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will start with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
+    >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will start with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
 
     *d.* Parcial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch. So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).
 
     *e.* Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
 
     *f.* In the new terminal, execute:
-        ```bash
-        git checkout main
-        ```
+    ```bash
+    git checkout main
+    ```
+
     *g.* Merge your *working-branch* into your *main branch*:
-        ```bash
-        git merge working-branch
-        ```
+    ```bash
+    git merge working-branch
+    ```
+
     *h.* Push the changes:
-        ```bash
-        git push
-        ```
+    ```bash
+    git push
+    ```
     
     *i.* Final result: if you go to your fork at GitLab and select your *main branch*, this time you'll see all the modifications you made.  
 
