@@ -9,7 +9,7 @@ The Version Control System "Git" is the way developers interact with each other.
 So, Let's start!
 
 ## Step By Step
-1. Create a fork of this repo.
+**1. Create a fork of this repo.**
     
     - Go to [Token Registry repo](https://gitlab.com/gimbalabs/ppbl-2023/ppbl-2023-token-registry)
     
@@ -19,7 +19,7 @@ So, Let's start!
     
     - Scroll down the page and click on the **Fork Project** button. This action will take you directly to your fork (your own copy) of the *Token Registry repo* with the URL *gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*
 
-2. Clone the repository locally (optional).
+**2. Clone the repository locally (optional).**
     
     - In your fork, look for the **Clone** button (on the right side). Click on it. 
     
@@ -61,7 +61,7 @@ So, Let's start!
 
     >#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen) and search and install the *Remote Development* extension.      
 
-3. Make changes.
+**3. Make changes.**
 
     ># Basic Routine:
 
@@ -85,7 +85,7 @@ So, Let's start!
 
     Copy the hexadecimal provided by the field "*The encoded string*" as a result.
 
-    *c.* Now, go to your fork on GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
+    *c.* Now, go to your fork at GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
 
     *d.* Located at VS Code: 
 
@@ -95,7 +95,7 @@ So, Let's start!
 
     - Go back to your `.json` recently created and paste there the `template.json` content.
 
-    - Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there, fill your own file. 
+    - Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there fill your own file. 
 
     >Note 1: the object `contactData` is a List ([]). In that List you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
     ```bash
@@ -107,19 +107,19 @@ So, Let's start!
     >Note 3: each String chunk (the content between quotes) has a limited capacity, 64 characters maximum. So if you want to include information that exceeds that limit, you will have to split the content into several Strings and separate them by commas. For example, in the field *bio*:
 
     ```bash
-    ["I'm a Gimbalabs tutor and I love my students, because they", "are the future of the ecosistem and", "the will create a better world."]
+    ["I'm a Gimbalabs tutor and I love my students because they", "are the future of the ecosistem and", "the will create a better common reality for all of us."]
     ```
     However, my recommendation is: make it simple. Write a brief and suscint message.
 
     - Save your work.
 
-    *e.* Commit and Push your changes to your fork:
+    *e.* Commit and Push your changes to your fork at GitLab:
 
     - Go to the *Source Code* icon at the left side (after you save your work, a number inside a *bubble* emerge from that icon).
 
-    - In the "Commit message" field, write a message. For example `I created a new .json file`.
+    - In the "Commit message" field, write a message. For example: `I created a new .json file`.
 
-    - Click on the *Commit & Push* button. Inmediately a window pops up asking you: "Commit to a new branch?". Choose: "*No, Use the current branch "main"* 
+    - Click on the *Commit & Push* button. Inmediately a window pops up asking you: "*Commit to a new branch?*". Choose: "*No, Use the current branch "main"*" 
 
     *f.* Final result: you can go to your fork at GitLab, and see all the changes you made.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, you have to submit a *Merge request*.
 
@@ -169,7 +169,7 @@ So, Let's start!
     
     *i.* Final result: if you go to your fork at GitLab and select your *main branch*, this time you'll see all the modifications you made.  
 
-4. Submit a Merge request:
+**4. Submit a Merge request.**
 
     - Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu). 
 
@@ -190,10 +190,10 @@ So, Let's start!
 
 ## Keep Exploring
 
-- In the numeral **3. Make changes**, instruction *a*, when you are searching your token's name in [Cardanoscan](https://preprod.cardanoscan.io/), you can do it as well using the *Contributor Reference Address*: `addr_test1wr6ewsvtmdjv8znh7wxvw9qezgwvju5rdk9gmgefvrvrhug7zrfe0` 
+- In the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, instruction *a*; when you are searching your token's name in [Cardanoscan](https://preprod.cardanoscan.io/), you can do it as well using the *Contributor Reference Address*: `addr_test1wr6ewsvtmdjv8znh7wxvw9qezgwvju5rdk9gmgefvrvrhug7zrfe0` 
 
 
-- In the numeral **3. Make changes**, instruction *b*, if you want to decode the Hexagesimal piece of data that you obtained thru the *Hex To Text Converter Online Tool*, go to [this page](https://string-functions.com/hex-string.aspx). 
+- In the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, instruction *b*; if you want to decode the Hexagesimal piece of data that you obtained thru the *Hex To Text Converter Online Tool*, go to [this page](https://string-functions.com/hex-string.aspx). 
 
 - These are really good GitLab guides: 
 
