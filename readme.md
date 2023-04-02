@@ -45,7 +45,7 @@ So, Let's start!
         ```bash
         git remote add upstream https://gitlab.com/gimbalabs/ppbl-2023/ppbl-2023-token-registry 
         ```
-    This action establish a connection between the Gimbalabs repo and your fork. This connection is key to make possible many interaction between both repositories. 
+        This action establish a connection between the Gimbalabs repo and your fork. This connection is key to make possible many interaction between both repositories. 
 
     - Execute the command `git branch`. That command let you see how many *branches* you have currently in your project.  In this moment, you should have only one: the **main branch**.
     
@@ -53,9 +53,9 @@ So, Let's start!
         ```bash
         git checkout -b working-branch
         ```
-    You can change *working-branch* by the name you choose.
+        You can change *working-branch* by the name you choose.
 
-    That action will take you directly to the **working-branch**, so you will do your assignment in that branch.You can check it using the `git branch` command.
+        That action will take you directly to the **working-branch**, so you will do your assignment in that branch.You can check it using the `git branch` command.
 
     -  Finally, execute the command `code .` for open your *development environment* and start to make changes.
 
