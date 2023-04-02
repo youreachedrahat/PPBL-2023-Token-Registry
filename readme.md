@@ -75,19 +75,19 @@ So, Let's start!
 
     #### 3.1 Directly from GitLab: 
 
-    a. In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the Cardanoscan's explorer, paste this PolicyID: 
+    *a.* In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the Cardanoscan's explorer, paste this PolicyID: 
 
     `05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056`
 
-    That action will show you a list. Find your PPBL2023 Token on that list.  Once you find it, copy your token's name.
+    That action will show you a list. Search your PPBL2023 Token on that list.  Once you find it, copy your token's name.
 
-    b. Next, in a new tab of your web browser, go to the [Hex To Text Converter Online Tool](https://string-functions.com/string-hex.aspx). In the field "*Enter the text to encode to hex*", paste your token's name. Then, click in the *Convert!* button. 
+    *b.* Next, in a new tab of your web browser, go to the [Hex To Text Converter Online Tool](https://string-functions.com/string-hex.aspx). In the field "*Enter the text to encode to hex*", paste your token's name. Then, click in the *Convert!* button. 
 
     Copy the hexadecimal provided by the field "*The encoded string*" as a result.
 
-    c. Now, go to your fork on GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
+    *c.* Now, go to your fork on GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code. 
 
-    d. Located at VS Code: 
+    *d.* Located at VS Code: 
 
         - create a new file inside the `mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
 
@@ -112,7 +112,7 @@ So, Let's start!
 
         - Save your work.
 
-    e. Commit and Push your changes to your fork:
+    *e.* Commit and Push your changes to your fork:
 
         - Go to the *Source Code* icon at the left side (after you save your work, a number inside a *bubble* emerge from that icon).
 
@@ -120,16 +120,16 @@ So, Let's start!
 
         - Click on the *Commit & Push* button. Inmediately a window pops up asking you: "Commit to a new branch?". Choose: "*No, Use the current branch "main"* 
 
-    f. Final result: you can go to your fork at GitLab, and see all the changes you made.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, you have to submit a *Merge request*.
+    *f.* Final result: you can go to your fork at GitLab, and see all the changes you made.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, you have to submit a *Merge request*.
 
 
     #### 3.2 Using you VS Code:
 
-    a. This part is a continuation of the step No. **2. Clone the repository locally**. So first follow the instructions listed there.
+    *a.* This part is a continuation of the step No. **2. Clone the repository locally**. So first follow the instructions listed there.
 
-    b. Next, from the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions *a, b,and d*.  
+    *b.* Next, from the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions *a, b,and d*.  
 
-    c. Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
+    *c.* Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
 
         - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
 
@@ -147,24 +147,24 @@ So, Let's start!
 
         >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will start with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
 
-    - Parcial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch. So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).
+    *d.* Parcial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch. So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).
 
-    - Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
+    *e.* Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
 
-    - In the new terminal, execute:
+    *f.* In the new terminal, execute:
         ```bash
         git checkout main
         ```
-    - Merge your *working-branch* into your *main branch*:
+    *g.* Merge your *working-branch* into your *main branch*:
         ```bash
         git merge working-branch
         ```
-    - Push the changes:
+    *h.* Push the changes:
         ```bash
         git push
         ```
     
-    - Final result: if you go to your fork at GitLab and select your *main branch*, this time you'll see all the modifications you made.  
+    *i.* Final result: if you go to your fork at GitLab and select your *main branch*, this time you'll see all the modifications you made.  
 
 4. Submit a Merge request:
 
