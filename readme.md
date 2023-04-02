@@ -134,21 +134,23 @@ So, Let's start!
 
     - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
 
-    - If you Hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
+    - If you hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
 
-    You will notice that the changes will disappear from that section and reappear in the *Staged Changes* section. 
+        You will notice that the changes will disappear from that section and reappear in the *Staged Changes* section. 
 
-    -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example, `I created a new .json file`. Next, click on the *Commit* button.
+    -  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example: `I created a new .json file`. Next, click on the *Commit* button.
 
     - Click on the *Sync Changes* button.
 
-    - After that action, a small window will pop-up, requesting your GitLab username. 
+    - After that action, a small window will pop up asking for your *GitLab username*.
 
     - Next, the same window will request a password. That password corresponds to your *Personal Access Token* that you can configure in the *Profile Settings* of your GitLab account, in the section "Access Tokens".
 
-    >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will start with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
+    >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will be a long string starting with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
 
-    *d.* Parcial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch. So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).
+    *d.* Parcial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch. 
+    
+    So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).
 
     *e.* Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
 
@@ -179,7 +181,7 @@ So, Let's start!
 
     - Select the *Target branch*. Listen:**Gimbalabs is the target branch**.  In the "Select target branch" option, select *main*.
 
-    - Click in **Compare branches and continue**
+    - Click on **Compare branches and continue**
 
     - In the field "Title", write a concise but descriptive reference for your merge request.
 
