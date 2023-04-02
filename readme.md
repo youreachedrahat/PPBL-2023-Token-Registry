@@ -173,9 +173,11 @@ So, Let's start!
 
 4. Submit a Merge request.
 
+    In this step, you will request that your changes be included in the main repository, in this case the Gimbalabs repository.
+
     - Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu). 
 
-    - Clock on the *New merge request* button.
+    - Click on the *New merge request* button.
 
     - Select the *Source branch*. Listen:**You are the source branch**.  In the "Select source branch" option, select *main*.
 
