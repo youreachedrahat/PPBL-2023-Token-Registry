@@ -150,7 +150,7 @@ So, Let's start!
 
     *d.* Parcial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch. 
     
-    #### So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).####
+    >So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo).
 
     *e.* Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
 
