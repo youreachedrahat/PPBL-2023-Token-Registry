@@ -163,7 +163,7 @@ So, Let's start!
     ```bash
     git merge working-branch
     ```
-    >Note: Don't forget: you have to replace *working-branch* for the name of **your** working branch.
+    >Note: Don't forget: you have to replace *working-branch* for the name you assigned to your working branch.
 
     *h.* Push the changes:
     ```bash
