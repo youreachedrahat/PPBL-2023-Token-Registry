@@ -9,7 +9,7 @@ The Version Control System "Git" is the way developers interact with each other.
 So, Let's start!
 
 ## Step By Step
-**1. Create a fork of this repo.**
+1. Create a fork of this repo.
     
     - Go to [Token Registry repo](https://gitlab.com/gimbalabs/ppbl-2023/ppbl-2023-token-registry)
     
@@ -19,7 +19,7 @@ So, Let's start!
     
     - Scroll down the page and click on the **Fork Project** button. This action will take you directly to your fork (your own copy) of the *Token Registry repo* with the URL *gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*
 
-**2. Clone the repository locally (optional).**
+2. Clone the repository locally (optional).
     
     - In your fork, look for the **Clone** button (on the right side). Click on it. 
     
@@ -61,7 +61,7 @@ So, Let's start!
 
     >#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen) and search and install the *Remote Development* extension.      
 
-**3. Make changes.**
+3. Make changes.
 
     ># Basic Routine:
 
@@ -169,7 +169,7 @@ So, Let's start!
     
     *i.* Final result: if you go to your fork at GitLab and select your *main branch*, this time you'll see all the modifications you made.  
 
-**4. Submit a Merge request.**
+4. Submit a Merge request.
 
     - Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu). 
 
