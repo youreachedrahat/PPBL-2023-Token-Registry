@@ -179,9 +179,9 @@ So, Let's start!
 
     - Click on the *New merge request* button.
 
-    - Select the *Source branch*. Listen:**You are the source branch**.  In the "Select source branch" option, select *main*.
+    - Select the *Source branch*. Listen: **You are the source branch**.  In the "Select source branch" option, select *main*.
 
-    - Select the *Target branch*. Listen:**Gimbalabs is the target branch**.  In the "Select target branch" option, select *main*.
+    - Select the *Target branch*. Listen: **Gimbalabs is the target branch**.  In the "Select target branch" option, select *main*.
 
     - Click on **Compare branches and continue**
 
