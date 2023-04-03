@@ -122,17 +122,24 @@ Commit and Push your changes to your fork at GitLab:
 
 #### Step 3 - Option #2 - Edit Locally in VS Code:
 This part is a continuation of  **Step 2. Clone the repository locally**. So first follow the instructions listed there.
+
 Next, from the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions *a, b, and d*.
+
 Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
-- Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
-- If you hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
+
+Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
+
+If you hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
 
 > You will notice that the changes will disappear from that section and reappear in the *Staged Changes* section.
 
--  Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example: `I created a new .json file`. Next, click on the *Commit* button.
-- Click on the *Sync Changes* button.
-- After that action, a small window will pop up asking for your *GitLab username*.
-- Next, the same window will request a password. That password corresponds to your *Personal Access Token* that you can configure in the *Profile Settings* of your GitLab account, in the section "Access Tokens".
+Time to *Commit* your changes: In the field "Message" (above the *Commit* button), write a message. For example: `I created a new .json file`. Next, click on the *Commit* button.
+
+Click on the *Sync Changes* button.
+
+After that action, a small window will pop up asking for your *GitLab username*.
+
+Next, the same window will request a password. That password corresponds to your *Personal Access Token* that you can configure in the *Profile Settings* of your GitLab account, in the section "Access Tokens".
 
 >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will be a long string starting with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
 
@@ -163,13 +170,13 @@ Final result: if you go to your fork at GitLab and select your *main branch*, th
 ### 4. Submit a Merge request.
 In this step, you will request that your changes be included in the main repository, in this case the Gimbalabs repository.
 
-- Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu).
-- Click on the *New merge request* button.
-- Select the *Source branch*. Listen: **You are the source branch**.  In the "Select source branch" option, select *main*.
-- Select the *Target branch*. Listen: **Gimbalabs is the target branch**.  In the "Select target branch" option, select *main*.
-- Click on **Compare branches and continue**
-- In the field "Title", write a concise but descriptive reference for your merge request.
-- Scroll down the screen and click on **Create merge request** button.
+a. Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu).
+b. Click on the *New merge request* button.
+c. Select the *Source branch*. Listen: **You are the source branch**.  In the "Select source branch" option, select *main*.
+d. Select the *Target branch*. Listen: **Gimbalabs is the target branch**.  In the "Select target branch" option, select *main*.
+e. Click on **Compare branches and continue**
+f. In the field "Title", write a concise but descriptive reference for your merge request.
+g. Scroll down the screen and click on **Create merge request** button.
 
 #### And that's it. SLT complete. Congratulations my dear student: You are the best!
 
