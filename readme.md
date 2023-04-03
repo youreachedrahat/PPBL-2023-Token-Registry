@@ -75,7 +75,7 @@ You can accomplish your assigment without going through the step 2 (but believe 
 
 Each option will cover the *Basic Routine* described above.
 
-#### Step 3 - Option #1 - Contribute Directly from GitLab.com:
+#### Hex Token Name:
 - In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the Cardanoscan Preprod explorer, paste this PolicyID:
 
 `05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056`
@@ -84,13 +84,15 @@ That action will show you a list. Search for your PPBL2023 Token on that list.  
 
 - Next, in a new tab of your web browser, go to the [Hex To Text Converter Online Tool](https://string-functions.com/string-hex.aspx). In the field "*Enter the text to encode to hex*", paste your token's name. Then, click in the *Convert!* button.
 - Copy the hexadecimal provided by the field "*The encoded string*" as a result. The string should start with `5050424c`, which is the hex equivalent of "PPBL".
+
+#### Step 3 - Option #1 - Contribute Directly from GitLab.com:
 - Now, go to your fork at GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code.
 
 Located at VS Code:
 - create a new file inside the `/mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `5050424c323032337061626f6e5f736562.json`
 - Next, open the file `template.json` and copy all its content (because it's a template).
 - Go back to your `.json` recently created and paste there the `template.json` content.
-- Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there fill your own file.
+- Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there fill your own file. All information is optional, so feel free to leave any of the `values` blank. For example, `DemoGerolamo` does not share any `contactData`.
 
 >Note 1: the object `contactData` is a List ([]). In that List you can include the contact information you want to make public: your telegram, your twitter, your discord, etc. Each of these data must be enclosed in quotation marks and each one must be separated by commas. For example:
 ```bash
@@ -119,7 +121,13 @@ Final result: you can go to your fork at GitLab, and see all the changes you mad
 #### Step 3 - Option #2 - Edit Locally in VS Code:
 This part is a continuation of  **Step 2. Clone the repository locally**. So first follow the instructions listed there.
 
-- Next, from the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions *a, b, and d*.
+In your local development environment:
+- create a new file inside the `/mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `5050424c323032337061626f6e5f736562.json`
+- Next, open the file `template.json` and copy all its content (because it's a template).
+- Go back to your `.json` recently created and paste there the `template.json` content.
+- Take a look at the file `5050424c3230323344656d6f4765726f6c616d6f.json` inside in the `mappings` folder: that file is our guide, your *example* file. Following the data structure there fill your own file. All information is optional, so feel free to leave any of the `values` blank. For example, `DemoGerolamo` does not share any `contactData`.
+
+When you are ready:
 - Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
 - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
 - If you hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
