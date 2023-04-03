@@ -170,13 +170,13 @@ Final result: if you go to your fork at GitLab and select your *main branch*, th
 ### 4. Submit a Merge request.
 In this step, you will request that your changes be included in the main repository, in this case the Gimbalabs repository.
 
-a. Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu).
-b. Click on the *New merge request* button.
-c. Select the *Source branch*. Listen: **You are the source branch**.  In the "Select source branch" option, select *main*.
-d. Select the *Target branch*. Listen: **Gimbalabs is the target branch**.  In the "Select target branch" option, select *main*.
-e. Click on **Compare branches and continue**
-f. In the field "Title", write a concise but descriptive reference for your merge request.
-g. Scroll down the screen and click on **Create merge request** button.
+- Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu).
+- Click on the *New merge request* button.
+- Select the *Source branch*. Listen: **You are the source branch**.  In the "Select source branch" option, select *main*.
+- Select the *Target branch*. Listen: **Gimbalabs is the target branch**.  In the "Select target branch" option, select *main*.
+- Click on **Compare branches and continue**
+- In the field "Title", write a concise but descriptive reference for your merge request.
+- Scroll down the screen and click on **Create merge request** button.
 
 #### And that's it. SLT complete. Congratulations my dear student: You are the best!
 
