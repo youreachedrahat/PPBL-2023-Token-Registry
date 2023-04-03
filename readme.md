@@ -26,16 +26,16 @@ At Gimbalabs, we use GitLab. To fully participate in Plutus PBL 2023, you will n
 - Scroll down the page and click on the **Fork Project** button. This action will take you directly to your fork (your own copy) of the *Token Registry repo* with the URL *gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*
 
 ### 2. Clone the repository locally (optional).
-- In your fork, look for the **Clone** button (on the right side). Click on it.
+- In your new fork, look for the **Clone** button (on the right side). Click on it.
 - Copy the URL corresponding to the *Clone with HTTPS* option.
 - Open a terminal in your computer.
-- Go to the Root directory.
+- Go to your `/ppbl2023` directory (or wherever you are saving other course repos).
 - Once there, paste the URL accompanied by the `git clone` command, as follows:
 ```bash
 git clone https://gitlab.com/your-gitlab-username/ppbl-2023-token-registry.git
 ```
 
-At this point, you would have your own copy of the Gimbalabs repository (your fork) on your machine. This means that you could do whatever you want with this copy without fear of damaging the Gimbalabs original repository.
+At this point, you will have your own copy of the Gimbalabs repository (your fork) on your machine. This means that you can do whatever you want with this copy without fear of damaging the Gimbalabs original repository.
 
 - Next, open the directory of your fork:
 ```bash
@@ -60,9 +60,9 @@ You can change *working-branch* by the name you choose.
 
 That action will take you directly to the **working-branch**, so you will do your assignment in that branch.You can check it using the `git branch` command.
 
-- Finally, execute the command `code .` for open your *development environment* and start to make changes.
+- Finally, execute the command `code .` to open your *development environment* and start to make changes.
 
->#### The Development Environment is a workspace for developers to make changes to the files that compound a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen) and search and install the *Remote Development* extension.
+> **Note: The Development Environment is a workspace for developers to make changes to the files that comprise a project.  If you don't have yet an IDE installed in your machine, the usual election is Visual Studio Code. So go to the [VS Code official site](https://code.visualstudio.com/) and install it like any other software.  Once you have VS Code open, go to the *extensions* tab (at the left of the screen) and search and install the *Remote Development* extension.**
 
 ### 3. Make changes.
 
@@ -73,23 +73,24 @@ That action will take you directly to the **working-branch**, so you will do you
 
 You can accomplish your assigment without going through the step 2 (but believe me: for your career as Developer you need to practice and gain experience in step 2).
 
-So let's see the two options: directly from GitLab (without the step 2), and using your own development environment (applying the step 2). Each option will cover the *Basic Routine* described above.
+So let's see the two options: directly from GitLab (without the step 2), and using your own development environment (applying the step 2).
 
-#### Step 3 - Option #1 - Edit Directly from GitLab.com:
+Each option will cover the *Basic Routine* described above.
 
-a. In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the Cardanoscan's explorer, paste this PolicyID:
+#### Step 3 - Option #1 - Contribute Directly from GitLab.com:
+- In a new tab, go to [Cardanoscan](https://preprod.cardanoscan.io/).  In the Cardanoscan's explorer, paste this PolicyID:
 
 `05cf1f9c1e4cdcb6702ed2c978d55beff5e178b206b4ec7935d5e056`
 
 That action will show you a list. Search your PPBL2023 Token on that list.  Once you find it, copy your token's name.
 
-b. Next, in a new tab of your web browser, go to the [Hex To Text Converter Online Tool](https://string-functions.com/string-hex.aspx). In the field "*Enter the text to encode to hex*", paste your token's name. Then, click in the *Convert!* button.
+- Next, in a new tab of your web browser, go to the [Hex To Text Converter Online Tool](https://string-functions.com/string-hex.aspx). In the field "*Enter the text to encode to hex*", paste your token's name. Then, click in the *Convert!* button.
 
 Copy the hexadecimal provided by the field "*The encoded string*" as a result.
 
-c. Now, go to your fork at GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code.
+- Now, go to your fork at GitLab (*gitlab.com/**your-gitlab-username**/ppbl-2023-token-registry*). Once there, look for and click in the **Web IDE** button (at the left side of the *Clone* button). That action will open a VS Code console in your web browser, ready to edit code.
 
-d. Located at VS Code:
+- Located at VS Code:
     - create a new file inside the `mappings` folder. The name of the file should follow the format: `Hex_obtained_previously.json`. For example: `3130305050424c323032337061626f6e5f736562.json`
     - Next, open the file `template.json` and copy all its content (because it's a template).
     - Go back to your `.json` recently created and paste there the `template.json` content.
@@ -111,21 +112,18 @@ However, my recommendation is: make it simple. Write a brief and suscint message
 
 - Save your work.
 
-e. Commit and Push your changes to your fork at GitLab:
+- Commit and Push your changes to your fork at GitLab:
     - Go to the *Source Code* icon at the left side (after you save your work, a number inside a *bubble* emerge from that icon).
     - In the "Commit message" field, write a message. For example: `I created a new .json file`.
     - Click on the *Commit & Push* button. Inmediately a window pops up asking you: "*Commit to a new branch?*". Choose: "*No, Use the current branch "main"*"
 
-f. Final result: you can go to your fork at GitLab, and see all the changes you made.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, you have to submit a *Merge request*.
+- Final result: you can go to your fork at GitLab, and see all the changes you made.  Congratulations! But remember: these changes are not part of the Gimbalabs repo yet. By make it possible, you have to submit a *Merge request*.
 
 
 #### Step 3 - Option #2 - Edit Locally in VS Code:
-
-a. This part is a continuation of  **Step 2. Clone the repository locally**. So first follow the instructions listed there.
-
-b. Next, from the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions *a, b, and d*.
-
-c. Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
+- This part is a continuation of  **Step 2. Clone the repository locally**. So first follow the instructions listed there.
+- Next, from the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, follow the instructions *a, b, and d*.
+- Commit and Push your changes from your **working-branch** to the **main branch** of your fork:
     - Go to the *Source Code* icon at the left side (after you save your work, a number inside a "bubble" emerge from that icon).
     - If you hover your mouse on the section *Changes*, a "+" sign will appear (among a few other symbols). Click on the "+" sign.
 
@@ -138,32 +136,31 @@ c. Commit and Push your changes from your **working-branch** to the **main branc
 
 >Note: In the "Access Tokens" section you will generate your new *personal access token*.  That token will be a long string starting with the prefix *glpat*.  Once generated, you should copy it immediately and save it securely.
 
-d. Parcial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch.
+- Partial result: if you go to your fork at GitLab and select your *working-branch*, you'll see all the modifications you made.  But, if you switch to your *main* branch, you will see that there are no modifications in that branch.
 
 >So that, it's time to merge the modifications to the *main branch* of **your fork** (not yet to the Gimbalabs repo):
 
-e. Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
+- Go back to your VS Code, go to the menu *Terminal* and open a *New Terminal*.
 
-f. In the new terminal, execute:
+- In the new terminal, execute:
 ```bash
 git checkout main
 ```
 
-g. Merge your *working-branch* into your *main branch*:
+- Merge your *working-branch* into your *main branch*:
 ```bash
 git merge working-branch
 ```
 >Note: Don't forget: you have to replace *working-branch* for the name you assigned to your working branch.
 
-h. Push the changes:
+- Push the changes:
 ```bash
 git push
 ```
 
-i. Final result: if you go to your fork at GitLab and select your *main branch*, this time you'll see all the modifications you made.
+- Final result: if you go to your fork at GitLab and select your *main branch*, this time you'll see all the modifications you made.
 
-4. Submit a Merge request.
-
+### 4. Submit a Merge request.
 In this step, you will request that your changes be included in the main repository, in this case the Gimbalabs repository.
 
 - Located in your repo at GitLab, go to the **Merge requests** option (at the left side menu).
@@ -174,17 +171,11 @@ In this step, you will request that your changes be included in the main reposit
 - In the field "Title", write a concise but descriptive reference for your merge request.
 - Scroll down the screen and click on **Create merge request** button.
 
-
 #### And that's it. SLT complete. Congratulations my dear student: You are the best!
 
 ## Keep Exploring
-
 - In the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, instruction *a*; when you are searching your token's name in [Cardanoscan](https://preprod.cardanoscan.io/), you can do it as well using the *Contributor Reference Address*: `addr_test1wr6ewsvtmdjv8znh7wxvw9qezgwvju5rdk9gmgefvrvrhug7zrfe0`
-
-
 - In the numeral **3. Make changes**, numeral **3.1 Directly from GitLab**, instruction *b*; if you want to decode the Hexagesimal piece of data that you obtained thru the *Hex To Text Converter Online Tool*, go to [this page](https://string-functions.com/hex-string.aspx).
-
 - These are really good GitLab guides:
-
     - https://docs.gitlab.com/ee/tutorials/make_your_first_git_commit.html
     - https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#clone-with-https
