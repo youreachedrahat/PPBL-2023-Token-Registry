@@ -1,0 +1,25 @@
+{
+    "subject": "5050424c32303233436c617564696f48",
+    "alias": "ClaudioH",
+    "contactData": {
+        "value": [
+            "e-mail: claudiohermida@protonmail.com",
+            "discord: Claudio#3166"
+        ]
+    },
+    "url": {
+        "value": [
+            "https://www.linkedin.com/in/claudiohermida/",
+            "https: //scholar.google.com/citations?user=8cqzaKkAAAAJ&hl=en&oi=ao"
+        ]
+    },
+    "bio": {
+        "value": [
+            "Licenciado en Informatica, ESLAI",
+            "PhD Computer Science, University of Edinburgh"
+        ]
+    },
+    "goals": {
+        "value": "Develop and audit smart contracts and dApps"
+    }
+}
