@@ -1,0 +1,24 @@
+{
+  "subject": "5050424c32303233617368",
+  "alias": "ash",
+  "contactData": {
+    "value": ["discord: Agustinbadi#6166"]
+  },
+  "url": {
+    "value": "https://ashdev.space"
+  },
+  "bio": {
+    "value": [
+      "Philosopher",
+      "Computer science amateur",
+      "Cosmopolite"
+    ]
+  },
+  "goals": {
+    "value":[
+      "Create technology that empowers people",
+      "Know how to develop descentralized protocols and cooperative networks",
+      "Study and practice alternative systems of inhabiting the world (The future is perma!)"
+    ]
+  }
+}
