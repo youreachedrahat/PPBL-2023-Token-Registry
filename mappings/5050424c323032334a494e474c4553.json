@@ -1,0 +1,29 @@
+{
+  "subject": "5050424c323032334a494e474c4553",
+  "alias": "Jingles",
+  "contactData": {
+      "value": [
+          "discord: Jingles#4393",
+          "twitter: @jinglescode",
+          "github: @jinglescode",
+          "linkedin: @jingles"
+      ]
+  },
+  "url": {
+      "value": [
+          "https://jingles.dev/",
+          "https://meshjs.dev/",
+          "https://github.com/jinglescode"
+      ]
+  },
+  "bio": {
+      "value": [
+          "Software Development",
+          "Machine Learning",
+          "Blockchain Engineering"
+      ]
+  },
+  "goals": {
+      "value": "Keep learning and building cool stuff"
+  }
+}
